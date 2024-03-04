@@ -48,7 +48,7 @@ export const Skills = () => {
                   <h5>Web Developer</h5>
                 </div>
                 <div className='item'>
-                  <img src={require('../assets/images/meter1.svg')} alt='skill-img' />
+                  <img src={meter3} alt='skill-img' />
                   <h5>Frontend Web Developer</h5>
                 </div>
               </Carousel>

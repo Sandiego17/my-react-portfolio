@@ -2,6 +2,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImage from "../assets/images/header-img.svg";
 import { useState, useEffect } from "react";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -45,11 +47,17 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
-            <h1>Hi,</h1>
-            <h1>{`I'm Henry Uzor, a `}<span className="wrap">{text}</span></h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been used for 500s, when an unknown printer took a gallery of type and scrambled it to make a type speciment book.</p>
-            <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__fadeIn animate__delay-1s" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>Hi,</h1>
+                  <h1>{`I'm Henry Uzor, a `}<span className="wrap">{text}</span></h1>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been used for 500s, when an unknown printer took a gallery of type and scrambled it to make a type speciment book.</p>
+                  <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
+                </div>
+              }
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImage} alt="Header img" />

@@ -7,6 +7,8 @@ import projImg2 from '../assets/images/project-img2.png';
 import projImg3 from '../assets/images/project-img3.png';
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from '../assets/images/color-sharp2.png';
+import 'animate.css';
+import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
@@ -47,8 +49,14 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__bounce" : ""}>
+                  <h2>Projects</h2>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                </div>
+              }
+            </TrackVisibility>
             <TabContainer id="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                 <Nav.Item>

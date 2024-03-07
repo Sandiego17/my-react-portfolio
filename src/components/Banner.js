@@ -16,9 +16,9 @@ export const Banner = () => {
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
-    }, delta)
+    }, delta);
 
-    return () => { clearInterval(ticker)};
+    return () => { clearInterval(ticker) };
   }, [text])
 
   const tick = () => {
@@ -29,7 +29,7 @@ export const Banner = () => {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2)
+      setDelta(prevDelta => prevDelta / 2);
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -53,17 +53,22 @@ export const Banner = () => {
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>Hi,</h1>
                   <h1>{`I'm Henry Uzor, a `}<span className="wrap">{text}</span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been used for 500s, when an unknown printer took a gallery of type and scrambled it to make a type speciment book.</p>
-                  <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speciment book.</p>
+                  <a href="#connect"><button>Let’s Connect <ArrowRightCircle size={25}/></button></a>
                 </div>
               }
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerImage} alt="Header img" />
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                  <img src={headerImage} alt="Header img" />
+                </div>}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>
     </section>
-  )
+  );
 }

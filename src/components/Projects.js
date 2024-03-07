@@ -48,12 +48,12 @@ export const Projects = () => {
     <section className="project" id="projects">
       <Container>
         <Row>
-          <Col>
+          <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                   <h2>Projects</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
               }
             </TrackVisibility>
@@ -71,18 +71,29 @@ export const Projects = () => {
               </Nav>
               <TabContent>
                 <TabPane eventKey="first">
-                  <Row>
-                    {
-                      projects.map((project, index) => {
-                        return (
-                          <ProjectCard key={index} {...project} />
-                        )
-                      })
+                  <TrackVisibility>
+                    {({ isVisible }) =>
+
+                      // This animation is not working yet. Try to fix it later
+                    
+                      <Row id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                        {
+                          projects.map((project, index) => {
+                            return (
+                              <ProjectCard key={index} {...project} />
+                            )
+                          })
+                        }
+                      </Row>
                     }
-                  </Row>
+                  </TrackVisibility>
                 </TabPane>
-                <TabPane eventKey="second">Second tab</TabPane>
-                <TabPane eventKey="third">Third tab</TabPane>
+                <TabPane eventKey="second">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                </TabPane>
+                <TabPane eventKey="third">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                </TabPane>
               </TabContent>
             </TabContainer>
           </Col>
@@ -90,6 +101,6 @@ export const Projects = () => {
       </Container>
       <img src={colorSharp2} className="background-image-right" alt='Bg-img-projects' />
     </section>
-  )
+  );
 }
  

@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
-import { Alert, Col, Row } from "react-bootstrap"
+import { useState, useEffect } from "react";
+import { Alert, Col, Row } from "react-bootstrap";
 
 export const Newsletter = ({ onValidated, status, message }) => {
   const [email, setEmail] = useState('');
@@ -22,11 +22,11 @@ export const Newsletter = ({ onValidated, status, message }) => {
   };
 
   return (
-    <Col lg={12}>
+    <Col lg={12} id="newsletter">
       <div className="newsletter-bx">
         <Row>
           <Col lg={12} md={6} xl={5}>
-            <h3>Subscribe to my newsletter</h3>
+            <h3>Subscribe to my newsletter<br></br> & Never miss latest updates</h3>
             {status === 'sending' && <Alert>Sending...</Alert>}
             {status === 'error' && <Alert variant="danger">{message}</Alert>}
             {status === 'success' && <Alert variant="success">{message}</Alert>}
@@ -42,5 +42,5 @@ export const Newsletter = ({ onValidated, status, message }) => {
         </Row>
       </div>
     </Col>
-  )
+  );
 }

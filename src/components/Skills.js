@@ -27,27 +27,27 @@ export const Skills = () => {
   };
 
   return (
-    <section className='skill' id='skills'>
+    <section className="skill" id="skills">
       <Container>
         <Row>
           <Col>
-            <div className='skill-bx'>
+            <div className="skill-bx">
               <h2>Skills</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum</p>
-              <Carousel responsive={responsive} infinite={true} className='skill-slider'>
-                <div className='item'>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+              <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                <div className="item">
                   <img src={meter2} alt='skill-img' />
                   <h5>Software Engineer</h5>
                 </div>
-                <div className='item'>
+                <div className="item">
                   <img src={meter1} alt='skill-img' />
                   <h5>Frontend Developer</h5>
                 </div>
-                <div className='item'>
+                <div className="item">
                   <img src={meter3} alt='skill-img' />
                   <h5>Web Developer</h5>
                 </div>
-                <div className='item'>
+                <div className="item">
                   <img src={meter3} alt='skill-img' />
                   <h5>Frontend Web Developer</h5>
                 </div>
@@ -58,5 +58,5 @@ export const Skills = () => {
       </Container>
       <img src={colorSharp} className='background-image-left' alt='Bg-img-skills' />
     </section>
-  )
+  );
 }

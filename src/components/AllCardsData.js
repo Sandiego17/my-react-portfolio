@@ -15,8 +15,9 @@ import stacImg5 from '../assets/images/git-icon.jpg';
 import stacImg6 from '../assets/images/github-light-icon.png';
 import stacImg7 from '../assets/images/javascript-image.jpg';
 import stacImg8 from '../assets/images/typescript-icon.jpg';
-import stacImg9 from '../assets/images/react-light-icon.png';
-import stacImg10 from '../assets/images/vuejs-icon.png';
+import stacImg9 from '../assets/images/npm-icon.jpg';
+import stacImg10 from '../assets/images/react-light-icon.png';
+import stacImg11 from '../assets/images/vuejs-icon.png';
 
 
 export const projects = [
@@ -86,5 +87,6 @@ export const stacks = [
   { toolUrl: stacImg7 },
   { toolUrl: stacImg8 },
   { toolUrl: stacImg9 },
-  { toolUrl: stacImg10 }
+  { toolUrl: stacImg10 },
+  { toolUrl: stacImg11 }
 ];

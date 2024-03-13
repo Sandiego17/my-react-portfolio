@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImage from "../assets/images/header-img.svg";
+import headerImage from '../assets/images/banner-image.png';
 import { useState, useEffect } from "react";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -46,20 +46,20 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={8}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn animate__delay-1s" : ""}>
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>Hi,</h1>
-                  <h1>{`I'm Henry Uzor, a `}<span className="wrap">{text}</span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speciment book.</p>
+                  <h1 className="myName">{`I'm Henry Uzor, a `}<span className="wrap">{text}</span></h1>
+                  <p>Thank you for visiting! I am a passionate Frontend Developer based in Nigeria, with a keen eye for responsive design and a passion for creating engaging user experiences. I invite you to explore my journey as a developer, this portfolio showcases my skills, projects, and achievements. Feel free to take a look around, and don't hesitate to reach out if you have any questions or would like to discuss potential opportunities. Thank you for stopping by, and I look forward to connecting with you!.</p>
                   <a href="#connect"><button>Let’s Connect <ArrowRightCircle size={25}/></button></a>
                 </div>
               }
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={6} xl={4}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
@@ -71,4 +71,4 @@ export const Banner = () => {
       </Container>
     </section>
   );
-}
+};

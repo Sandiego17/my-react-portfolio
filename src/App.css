@@ -320,7 +320,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: updown 3s linear infinite;
 }
 
-@keyframes updown {
+/* @keyframes updown {
     0% {
         transform: translateY(-20px);
     }
@@ -330,10 +330,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     100% {
         transform: translateY(-20px);
     }
-}
+} */
 
 .wrap {
   border-right: 0.08em solid #666;
+}
+
+@media (min-width:768px) {
+	.myName {
+    height: 260px;
+	}
+}
+
+@media (min-width:1200px) {
+	.myName {
+    height: 130px;
+	}
 }
 
 /************ Skills CSS ************/
@@ -467,7 +479,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0 55px 55px 0;
 }
 
-.proj-imgbx {
+.proj-imgbx, .tech-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
@@ -489,6 +501,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .proj-txtx {
+  color: #fff;
   position: absolute;
   text-align: center;
   top: 65%;
@@ -525,6 +538,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+.profileImg {
+  height: 406px;
+  width: 391px;
+}
+
+@media (min-width: 768px) {
+	.profile {
+    display: flex;
+	}
 }
 
 /************ Contacts CSS ************/

@@ -1,9 +1,9 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import meter1 from '../assets/images/meter1.svg';
-import meter2 from '../assets/images/meter2.svg';
-import meter3 from '../assets/images/meter3.svg';
+import meter1 from '../assets/svgs/meter1.svg';
+import meter2 from '../assets/svgs/meter2.svg';
+import meter3 from '../assets/svgs/meter3.svg';
 import colorSharp from '../assets/images/color-sharp.png';
 
 export const Skills = () => {
@@ -33,7 +33,7 @@ export const Skills = () => {
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+              <p>With a strong foundation in frontend web development, I bring expertise in HTML5, CSS3, JavaScript, TypeScript, React.js, and Vue.js. I'm adept at creating responsive and user-friendly web applications, ensuring optimal performance across various platforms and devices.<br></br> Whether it is crafting engaging user interfaces, optimizing website performance, or implementing innovative solutions, I'm dedicated to delivering high-quality results that exceed expectations.</p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
                   <img src={meter2} alt='skill-img' />

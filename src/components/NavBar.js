@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from '../assets/images/logo.svg';
-import navIcon1 from '../assets/images/nav-icon1.svg';
-import navIcon2 from '../assets/images/nav-icon2.svg';
-import navIcon3 from '../assets/images/nav-icon3.svg';
+import logo from '../assets/svgs/logo.svg';
+import navIcon1 from '../assets/svgs/nav-icon1.svg';
+import navIcon2 from '../assets/svgs/nav-icon2.svg';
+import navIcon3 from '../assets/svgs/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 

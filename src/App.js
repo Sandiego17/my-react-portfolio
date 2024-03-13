@@ -6,6 +6,7 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { projects, stacks } from './components/AllCardsData';
 
 function App() {
   return (
@@ -13,7 +14,10 @@ function App() {
       <NavBar />
       <Banner />
       <Skills />
-      <Projects />
+      <Projects
+        projects={projects}
+        stacks={stacks}
+      />
       <Contact />
       <Footer />
     </div>

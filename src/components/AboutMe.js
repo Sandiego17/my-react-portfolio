@@ -9,17 +9,17 @@ import colorSharp2 from '../assets/images/color-sharp2.png';
 import 'animate.css';
 import TrackVisibility from "react-on-screen";
 
-export const Projects = ({ projects, stacks }) => {
+export const AboutMe = ({ projects, stacks }) => {
 
   return (
-    <section className="project" id="projects">
+    <section className="project" id="aboutMe">
       <Container>
         <Row>
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__bounce" : ""}>
-                  <h2>Projects</h2>
+                  <h2>About Me</h2>
                   {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
                 </div>
               }
@@ -41,7 +41,7 @@ export const Projects = ({ projects, stacks }) => {
                   <div className="profile">
                     <img src={profileImg} className="profileImg" alt="profile img" />
                     <p>My name is <b>Henry Tochukwu Uzor</b> and I am a Frontend Software Engineer with about 3 years of experience in Frontend Web Development. My core tech stacks include HTML, CSS, SASS, Bootstrap, TailwindCSS, Git, GitHub, JavaScript, TypeScript, Cypress, Vue3.JS, and React.JS.<br></br>
-                    I am a strong and active team player, as highlighted by my continuous contribution and collaboration with team members on company projects such as SEPAL3.0 project, and the eHSAT+ project. This skill is also highlighted by my previous participation and function as the Assistant General Secretary of the Young Engineers Forum of Nigeria (YEFoN), Nigerian Society of Engineers (NSE), and now the current General Secretary of the same association.<br></br>
+                    I am a strong and active team player, as highlighted by my continuous contribution and collaboration with team members on company projects such as SEPAL3.0 project, and the eHSAT+ project. This skill is also highlighted by my previous participation and function as the Assistant General Secretary of the Young Engineers Forum of Nigeria (YEFoN), Nigerian Society of Engineers (NSE), Ikeja Branch, and now the current General Secretary of the same association.<br></br>
                     What motivates me is that I am goal-oriented and I very much like to challenge myself to new goals, accomplishments, and endeavors. What makes me unique is my commitment to team objectives, placing the needs of the team above everything else.<br></br>
                     Beyond my professional career, I have been privileged to be the Lead Tutor of a free Software Bootcamp with about 15 Frontend newbies, and I have a weekly newsletter I write on LinkedIn that teaches about Frontend Development. I have completed a few projects as a team member for my company and on a personal level.<br></br>
                     I am passionate about Software Engineering, Artificial intelligence, Virtual and Augmented Reality. I especially find MetaVerse technology a fascinating tool that can be used to upscale and solve a lot of deficiencies in education systems across the globe. The possibilities, potentials, as well as business opportunities that can be unlocked by deploying this technology, are endless.</p>

@@ -156,7 +156,7 @@ span.navbar-text {
 }
 
 .social-icon a img {
-	width: 40%;
+	width: 60%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
@@ -543,6 +543,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .profileImg {
   height: 406px;
   width: 391px;
+}
+
+.tech-imgbx {
+  background-color: #fff;
 }
 
 @media (min-width: 768px) {

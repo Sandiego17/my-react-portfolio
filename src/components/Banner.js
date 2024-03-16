@@ -53,8 +53,9 @@ export const Banner = () => {
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>Hi,</h1>
                   <h1 className="myName">{`I'm Henry Uzor, a `}<span className="wrap">{text}</span></h1>
-                  <p>Thank you for visiting! I am a passionate Frontend Developer based in Nigeria, with a keen eye for responsive design and a passion for creating engaging user experiences. I invite you to explore my journey as a developer, this portfolio showcases my skills, projects, and achievements. Feel free to take a look around, and don't hesitate to reach out if you have any questions or would like to discuss potential opportunities. Thank you for stopping by, and I look forward to connecting with you!.</p>
+                  <p>Thank you for visiting! I am a passionate Frontend Developer based in Nigeria, with a keen eye for responsive design and a passion for creating engaging user experiences. I invite you to explore this portfolio website of mine that showcases my skills, projects, and tech stack. Do not hesitate to reach out if you have any questions or would like to discuss potential opportunities. Thank you for stopping by, and I look forward to connecting with you!</p>
                   <a href="#connect"><button>Let’s Connect <ArrowRightCircle size={25}/></button></a>
+                  {/* <a href="#"><button>Resume</button></a> */}
                 </div>
               }
             </TrackVisibility>

@@ -2,7 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="./src/assets/images/banner-bg.png">
+![Screenshot (195)](https://github.com/user-attachments/assets/17de16da-91d3-41ba-b71c-46679e533289)
+
 
 Built using:
 
